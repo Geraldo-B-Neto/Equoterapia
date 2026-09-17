@@ -1,0 +1,80 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 1px green solid;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerDadosCavalos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.dadosCavalos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+}
+
+.containerBoxImgCavalo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.boxImgCavalo {
+    border-radius: 50%;
+    background-color: var(--fundoBrancoCard);
+    width: 8rem;
+    height: 8rem;
+}
+
+.containerBoxInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.statusRow {
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    gap: 1rem;
+}
+
+.statusRow span {
+    font-size: var(--font-default-size);
+    white-space: nowrap;
+}
+
+.statusBadge {
+
+
+    outline: none;
+    border: none;
+    background: none;
+
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--fundoBrancoCard);
+    font-size: var(--font-default-size);
+}
+
+.statusBadge:hover {
+    opacity: 0.85;
+}
+
+/* Opcional: caso queira destacar visualmente quando estiver inativo */
+.statusBadge.inativo {
+    opacity: 0.6;
+}

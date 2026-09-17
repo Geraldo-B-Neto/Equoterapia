@@ -1,0 +1,48 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.containerDadosEquoterapeuta {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.dadosEquoterapeuta {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+}
+
+.containerBoxImgEquoterapeuta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.boxImgEquoterapeuta {
+    border-radius: 50%;
+    background-color: var(--fundoBrancoCard);
+    width: 8rem;
+    height: 8rem;
+}
+
+.containerBoxInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.containerDadosResponsavel {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}

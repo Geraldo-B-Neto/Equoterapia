@@ -1,0 +1,31 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.containerCta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
+
+.containerNavegationMobileBtns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem 0;
+}
+
+.containerLastSession {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}

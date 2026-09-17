@@ -1,0 +1,1 @@
+export { EquoterapeutaCard } from './EquoterapeutaCard';

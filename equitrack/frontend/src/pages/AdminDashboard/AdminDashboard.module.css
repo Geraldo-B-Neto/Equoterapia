@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.metricsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.card {
+    background-color: var(--fundoBrancoCard, #f8f9fa);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    padding-inline: 3rem;
+
+    width: 100%;
+}
+
+.card img {
+    width: 80px;
+    height: 100%;
+}
+
+.metrics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+}
+
+.number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--corVerdeEscuro);
+    margin-top: 0.5rem;
+}
+
+.actionsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.actionCard {
+    background-color: var(--fundoBrancoCard);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.buttonGroup button {
+    width: 50%;
+}

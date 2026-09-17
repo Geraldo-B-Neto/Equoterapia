@@ -1,0 +1,75 @@
+/* frontend/src/components/ui/Button/Button.module.css */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-family: var(--font-family-base);
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Variantes */
+.primary {
+    background-color: var(--corVerdeClaro);
+    color: var(--corBranca);
+    border: none;
+    padding: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+
+.primary:hover {
+    opacity: 0.8;
+    transform: scale(1.02);
+}
+
+.secondary {
+    background-color: var(--cor-accent-gold);
+    color: var(--color-text-light);
+}
+
+.third {
+    background-color: var(--corVerdeEscuro);
+    color: var(--colorBranca);
+}
+
+.danger {
+    background-color: var(--color-danger-red);
+    color: var(--color-text-light);
+}
+
+.ghost {
+    background-color: var(--corBrancaCard);
+}
+
+.white {
+    background-color: var(--corBranca);
+}
+
+/* Tamanhos para Pista */
+.sm {
+    padding: 0.5rem;
+}
+
+.md {
+    padding: 1rem;
+}
+
+.lg {
+    padding: 2rem;
+}
+
+/* Facilita o toque na Pista */
+
+.fullWidth {
+    width: 100%;
+}

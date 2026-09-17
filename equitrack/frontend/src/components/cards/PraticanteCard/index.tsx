@@ -1,0 +1,1 @@
+export { PraticanteCard } from './PraticanteCard';

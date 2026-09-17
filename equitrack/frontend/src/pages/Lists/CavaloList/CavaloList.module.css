@@ -1,0 +1,52 @@
+.main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--corBranca, #fff);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table th,
+.table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.table th {
+    background-color: var(--corVerdeEscuro, #1b3626);
+    color: #fff;
+}
+
+.ativo {
+    color: green;
+    font-weight: bold;
+}
+
+.inativo {
+    color: red;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footerNav {
+    margin-top: 2rem;
+}

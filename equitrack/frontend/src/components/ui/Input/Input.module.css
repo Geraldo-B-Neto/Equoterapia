@@ -1,0 +1,24 @@
+.boxInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.boxInputs label {
+    font-size: var(--font-default-size);
+}
+
+.input {
+    border-radius: 10px;
+    background-color: var(--fundoBrancoCard);
+    outline: none;
+    border: none;
+    padding: 0.8rem 1rem;
+    font-family: var(--font-family-base);
+    font-size: var(--font-default-size);
+}
+
+.fullWidth {
+    width: 100%;
+}

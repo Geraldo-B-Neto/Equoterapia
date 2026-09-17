@@ -1,0 +1,43 @@
+.header {
+    background-color: #2D4A27;
+    /* Verde escuro conforme o layout */
+    padding: 1rem 1.5rem;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.backButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.backButton img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
+.title {
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    flex: 1;
+}
+
+.navUserImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}

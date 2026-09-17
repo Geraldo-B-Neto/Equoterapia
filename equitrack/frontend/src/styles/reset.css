@@ -1,0 +1,28 @@
+/* frontend/src/styles/reset.css */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  padding: 2rem .5rem;
+}
+
+
+a,
+input,
+textarea,
+select,
+button {
+  text-decoration: none;
+  font-family: inherit;
+}

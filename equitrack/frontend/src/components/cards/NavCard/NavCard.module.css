@@ -1,0 +1,30 @@
+.navegationMobileBtn {
+    background-color: var(--fundoBrancoCard);
+    height: 12rem;
+    width: 12rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    cursor: pointer;
+}
+
+.navegationMobileBtn:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.centerFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.centerFlex img {
+    width: 8rem;
+    height: 100%;
+}
