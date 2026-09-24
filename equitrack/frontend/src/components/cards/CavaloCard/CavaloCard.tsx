@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './PraticanteCard.module.css';
+import styles from './CavaloCard.module.css';
 import { Divider } from '../../ui/Divider';
 import { Button } from '../../ui/Button';
-import fotoPraticante from '../../../assets/placeholders/praticante_1.png';
+import fotoCavalo from '../../../assets/placeholders/cavalo_1.png';
 
-interface PraticanteCardProps {
+interface CavaloCardProps {
     statusText: string;
     isStatusActive?: boolean;
     avatarUrl?: string;
@@ -12,19 +12,19 @@ interface PraticanteCardProps {
     info1?: string;
     info2?: string;
     actionText?: string;
-    onActionClick: () => void;
-    onWhatsAppClick?: () => void;
+    onActionClick?: () => void;
+    onEditClick?: () => void;
 }
 
-export const PraticanteCard: React.FC<PraticanteCardProps> = ({
+export const CavaloCard: React.FC<CavaloCardProps> = ({
     statusText,
     isStatusActive = true,
-    avatarUrl = fotoPraticante,
+    avatarUrl = fotoCavalo,
     title,
     info1,
     info2,
     onActionClick,
-    onWhatsAppClick,
+    onEditClick,
 }) => {
     return (
         <div className={styles.card}>
@@ -46,8 +46,8 @@ export const PraticanteCard: React.FC<PraticanteCardProps> = ({
                     <Button variant="third" onClick={onActionClick}>
                         Registros
                     </Button>
-                    <Button variant="third" onClick={onWhatsAppClick || onActionClick}>
-                        WhatsApp
+                    <Button variant="third" onClick={onEditClick || onActionClick}>
+                        Editar
                     </Button>
                 </div>
             </div>

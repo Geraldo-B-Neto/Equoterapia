@@ -1,0 +1,1 @@
+export { CavaloCard } from './CavaloCard';

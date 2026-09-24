@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './EquoterapeutaCard.module.css';
 import { Divider } from '../../ui/Divider';
 import { Button } from '../../ui/Button';
+import userPlaceholder from '../../../assets/placeholders/user.jpg';
 
 interface EquoterapeutaCardProps {
     statusText: string;
@@ -10,23 +11,23 @@ interface EquoterapeutaCardProps {
     title: string;
     info1?: string;
     info2?: string;
-    actionText: string;
+    actionText?: string;
     onActionClick: () => void;
+    onWhatsAppClick?: () => void;
 }
 
 export const EquoterapeutaCard: React.FC<EquoterapeutaCardProps> = ({
     statusText,
     isStatusActive = true,
-    avatarUrl = '/avatar-placeholder.png',
+    avatarUrl = userPlaceholder,
     title,
     info1,
     info2,
     onActionClick,
+    onWhatsAppClick,
 }) => {
     return (
         <div className={styles.card}>
-
-
             <div className={styles.cardBody}>
                 <img src={avatarUrl} alt={title} className={styles.avatar} />
                 <div className={styles.cardInfo}>
@@ -40,22 +41,15 @@ export const EquoterapeutaCard: React.FC<EquoterapeutaCardProps> = ({
             </div>
 
             <div className={styles.cardFooter}>
-
                 <Divider width='large' backgroundColor='corBranca'></Divider>
-
                 <div>
-
                     <Button variant="third" onClick={onActionClick}>
                         Registros
                     </Button>
-                    <Button variant="third" onClick={onActionClick}>
+                    <Button variant="third" onClick={onWhatsAppClick || onActionClick}>
                         WhatsApp
                     </Button>
-
-
                 </div>
-
-
             </div>
         </div>
     );

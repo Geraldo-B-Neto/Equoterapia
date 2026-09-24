@@ -15,10 +15,10 @@
 }
 
 .cardBody img {
-
     border: 1px red solid;
     width: 50%;
     height: 100%;
+    object-fit: cover;
 }
 
 .cardInfo {
@@ -56,5 +56,4 @@
 .cardFooter aside {
     font-size: var(--font-auxiliary-size);
     line-height: var(--font-auxiliary-line-height);
-
 }

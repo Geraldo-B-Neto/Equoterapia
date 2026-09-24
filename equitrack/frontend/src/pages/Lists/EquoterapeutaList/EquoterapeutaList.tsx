@@ -17,19 +17,20 @@ export const EquoterapeutaList: React.FC = () => {
             .catch((err) => console.error('Erro ao buscar equoterapeutas:', err));
     }, []);
 
-    // Filtro de busca com verificação de segurança (optional chaining)
+    // Filtro de busca por nome ou especialidade
     const equoterapeutasFiltrados = equoterapeutas.filter((p) =>
-        p.nome?.toLowerCase().includes(busca.toLowerCase())
+        p.nome?.toLowerCase().includes(busca.toLowerCase()) ||
+        p.especialidade?.toLowerCase().includes(busca.toLowerCase())
     );
 
     return (
         <>
-            <Header title={"Gestão de Equoterapeutas"} showBackButton={true} />
+            <Header title="Gestão de Equoterapeutas" showBackButton={true} />
 
             <EntityListLayout
                 tituloBotaoTopo="+ Cadastrar Equoterapeuta"
                 onNovoClick={() => navigate('/equoterapeutas/novo')}
-                tituloSecao="Lista de Equoterapeutas"
+                tituloSecao="Equoterapeutas"
                 placeholderBusca="Busque por equoterapeutas..."
                 onBuscaChange={(termo) => setBusca(termo)}
             >
@@ -48,6 +49,13 @@ export const EquoterapeutaList: React.FC = () => {
                             info2={`📋 Registro: ${equoterapeuta.registroProfissional || 'Não informado'}`}
                             actionText="Ver / Editar cadastro >"
                             onActionClick={() => navigate(`/equoterapeutas/editar/${equoterapeuta.id}`)}
+                            onWhatsAppClick={() => {
+                                if (equoterapeuta.telefone) {
+                                    window.open(`https://wa.me/55${equoterapeuta.telefone.replace(/\D/g, '')}`, '_blank');
+                                } else {
+                                    navigate(`/equoterapeutas/editar/${equoterapeuta.id}`);
+                                }
+                            }}
                         />
                     ))
                 )}
